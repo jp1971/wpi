@@ -8,7 +8,7 @@ wpi is a bash script that automates installing WordPress from the command line. 
 
 Usage
 -----
-* Download this repository and install wpi somehwere in your user path (e.g. `/usr/local/bin/').
+* Download this repository and install wpi somehwere in your user path (e.g. `/usr/local/bin/`).
 * Change the script's permissions so that it is executable (i.e. `chmod +x wpi`).
 * Create a directory in which you want to install WordPress.
 * `cd` into this directory.
