@@ -16,6 +16,7 @@ usage()
 	echo "  Example: wpi"
 	echo ""
 	echo "  -h, --help 			Print this help."
+	echo "  -i, --install 		Install WordPress."
 	echo ""
 	exit 0
 	}
@@ -26,12 +27,15 @@ do
 		-h | --help )
 			usage
 			;;
-		*)
-			usage
-			;;
 	esac
 	shift
 done
+
+if [ -z "$1" ]
+then	
+		usage
+		exit 0
+fi
 
 
 
