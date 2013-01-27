@@ -9,23 +9,35 @@
 # rm -f latest.tar.gz  
 
 usage()
-	{
-	echo "Install the latest version of WordPress into the current directory."	
-	echo ""
-	echo "usage: wpi [-h]"
-	echo "  Example: wpi"
-	echo ""
-	echo "  -h, --help 			Print this help."
-	echo "  -i, --install 		Install WordPress."
-	echo ""
-	exit 0
-	}
+		{
+		echo "Install the latest version of WordPress into the current directory."	
+		echo ""
+		echo "usage: wpi [-h]"
+		echo "  Example: wpi"
+		echo ""
+		echo "  -h, --help 			Print this help."
+		echo "  -i, --install 		Install WordPress."
+		echo ""
+		exit 0
+		}
+
+install()
+		{
+		wget http://wordpress.org/latest.tar.gz  
+		tar xfz latest.tar.gz	
+		mv wordpress/* ./ 
+		rmdir ./wordpress/  
+		rm -f latest.tar.gz  
+		}
 
 while [ "$1" ]
 do
 	case "$1" in
 		-h | --help )
 			usage
+			;;
+		-i | --install )
+			install
 			;;
 	esac
 	shift
