@@ -4,7 +4,7 @@ w(ord)p(ress)i(nstall)
 Description
 -----------
 
-wpi is a bash script that automates installing WordPress from the command line.  If you install WordPress on a regular basis, I suggest installing it in your user path somewhere such as `/usr/local/bin/`.
+wpi is a bash script that automates installing WordPress from the command line.  If you install WordPress on a regular basis, I suggest installing it in your user path somewhere such as `/usr/local/bin/`. Note: This script relies on wget. If you're using OS X, install [Homebrew](http://brew.sh/) then install wget.
 
 Usage
 -----
